@@ -22,10 +22,18 @@ cd devon
 docker-compose build
 docker-compose up -d
 ```
+
+构建完成相关服务之后，我们需要把的 PHP 应用比如 laravel 或 phpcms 放到 /var/www/htmnl 这个目录里面，然后去安装一下就行了。注意在安装的时候，数据库主机的名字应该是 `db`，而不是 `localhost` 。
+
+
 4 → 在浏览器里打开
 ```
 http://localhost:80   ```注意：如果你本地已经构建过开发环境，那么服务应该是已经占用了80端口，可以考虑使用8080端口，因为我本地环境是干净的，所以我直接使用了80端口```
 
 ```
+我们来看看phpinfo是否能正常输出
 
-构建完成相关服务之后，我们需要把的 PHP 应用比如 laravel 或 phpcms 放到 /var/www/htmnl 这个目录里面，然后去安装一下就行了。注意在安装的时候，数据库主机的名字应该是 `db`，而不是 `localhost` 。
+![image](http://devon.oss-cn-hangzhou.aliyuncs.com/others/phpinfo.png)
+
+再看看我们构建的Laravel服务是否成功
+![image](http://devon.oss-cn-hangzhou.aliyuncs.com/others/hello.png)
