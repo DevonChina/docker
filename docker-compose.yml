@@ -46,7 +46,6 @@ services:
       PMA_HOST: "db"
       PMA_USER: "root"
       PMA_PASSWORD: "root"
-
 volumes:
     db:
       driver: local

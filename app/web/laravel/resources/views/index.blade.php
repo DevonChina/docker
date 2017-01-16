@@ -3,6 +3,6 @@
     <title>test</title>
   </head>
   <body>
-    Test Laravel
+    Test
   </body>
 </html>

@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Hello FAN JUN</div>
+                <div class="title">FAN JUN</div>
             </div>
         </div>
     </body>
